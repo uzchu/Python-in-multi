@@ -5,3 +5,10 @@
 
 number = int(input('숫자를 입력하세요: '))
 # 아래에 코드를 작성해 주세요.
+
+if number%2==0:
+    print('{}는 짝수'.format(number))
+    pass
+else:
+    print('{}는 홀수'.format(number))
+    pass

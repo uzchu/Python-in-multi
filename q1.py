@@ -5,3 +5,6 @@
 
 str = input('문자를 입력하세요: ')
 # 아래에 코드를 작성해 주세요.
+
+print('첫 글자는 {}'.format(str[0]))
+print('마지막 글자는 {}'.format(str[-1]))
