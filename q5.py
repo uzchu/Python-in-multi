@@ -8,10 +8,22 @@
 prices = input('물품 가격을 입력하세요: ')
 # 아래에 코드를 작성해 주세요.
 
-data=prices.split(";")
-for i in range(len(data)):
-    data[i] = int(data[i])
+#data=prices.split(";")
+#for i in range(len(data)):
+#    data[i] = int(data[i])
+#    pass
+#data.sort
+#data.sort(reverse=True)
+#print(data)
+
+#teacher.ver
+makes = prices.split(";")
+boxes = []
+for make in makes:
+    boxes.append(int(make))
     pass
-data.sort
-data.sort(reverse=True)
-print(data)
+boxes.sort(reverse=True)
+
+for box in boxes:
+    print(box)
+
