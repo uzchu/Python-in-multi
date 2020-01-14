@@ -84,3 +84,170 @@ n', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase'
 ##### :star:map
 
 :함수와 반복가능한 자료형을 입력받아 수행한 결과 돌려주는 함수 (filter와 유사하나 true,false형 외의 것도 가능함 좀 더 범용적)
+
+##### oct
+
+:정수를 8진수 문자열로
+
+##### open
+
+:파일 이름과 읽기방법을 입력받아 파일객체를 돌려줌 (읽기방법 생략시 'r')
+
+| mode | 설명          |
+| ---- | ------------- |
+| w    | 쓰기모드      |
+| r    | 읽기모드      |
+| a    | 추가모드      |
+| b    | 바이너리 모드 |
+
+##### ord(chr 반대)
+
+:문자의 아스키코드 값을 돌려줌
+
+##### pow
+
+: pow(x,y) >> x <sup>y </sup>
+
+##### range
+
+: for문과 함께 자주사용
+
+인수가 1개 (0부터 시작, 1씩 증가)
+
+인수가 2개 (두개의 인수는 시작, 끝 숫자를 말함. 끝 숫자는 포함X,1씩증가)
+
+인수가 3개 (세번째 인수씩 만큼 증가)
+
+##### round
+
+:반올림
+
+##### sorted
+
+:정렬
+
+##### str
+
+:문자열로
+
+##### sum
+
+:리스트나 튜플 요소 합계
+
+##### type
+
+:자료형이 뭔지
+
+##### :star:zip
+
+:동일한 개수로 이루어진 자료형을 묶어주는 역할 (같은 위치)
+
+```
+list(zip([1,2,3],[4,5,6]))
+>> [(1,4),(2,5),(3,6)]
+```
+
+
+
+# 외장함수
+
+##### sys
+
+:파이썬 인터프리터가 제공하는 변수와 함수를 직접 제어할 수 있게 해주는 모듈
+
+(추후 추가 공부..)
+
+##### pickle
+
+:객체의 형태를 유지하면서 파일에 저장하고 불러올 수 있게하는 모듈
+
+pickle.dump로 저장, pickle.load로 불러옴
+
+```python
+import pickle
+f = open("test.txt",'wb')
+data = {1:'python', 2:'you need'}
+pickle.dump(data,f)
+f.close()
+
+import pickle
+f = open("test.txt",'rb')
+data = pickle.load(f)
+print(data)
+{2:'you need',1:'python'}
+```
+
+##### glob
+
+:디렉터리에 있는 파일들을 리스트로 만들어줌, 메타문자를 사용해 원하는 파일만 읽어올 수도 있음
+
+```python
+파일이름이 mark로 시작하는 파일 모두 불러올 때
+import glob
+glob.glob('c:/doit/mark*')
+>>
+['c:doit\\marks1.py','c:doit\\marks2.py','c:doit\\marks3.py']
+```
+
+##### webbrowser
+
+:웹브라우저를 자동으로 실행하는 모듈
+
+```python
+import webbrowser
+webbrowser.open('http:/google.com')
+새로운 창 열 때
+webbrowser.open_new('http://google.com')
+```
+
+# 정규표현식
+
+##### 정규표현식 지원모듈 (re)
+
+```
+import re
+p = re.compile('ab*')
+```
+
+##### 메타문자
+
+:메타 문자란 원래 그 문자가 가진 뜻이 아닌 특별한 용도로 사용하는 문자
+
+<center>`. ^ $ * + ? { } [ ] \ | ( )`</center>
+
+##### 문자클래스[]
+
+:[]사이의 문자들과 매치
+
+`-` : (from - to)범위 의미
+
+`^` : 반대(not) 의미
+
+##### Dot(.)
+
+`a.b` : a + 모든 문자+b
+
+`a[.]b` : a + . + b (문자 . 그대로 의미)
+
+##### 반복(*)
+
+:*앞에 있는 문자가 0부터 무한대로 반복될 수 있다는 의미(메모리상 2억개까지만 가능)
+
+##### 반복(+)
+
+:*가 0부터라면, +는 1부터
+
+##### 반복({m,n})
+
+: {m} 반드시 m번 반복 되는 것만 매치
+
+{m,n} m에서 n번 사이(이상,이하)로 반복되는 것만 매치
+
+? 있거나 없거나 둘다 매치
+
+
+
+
+
+
+
