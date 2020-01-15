@@ -100,6 +100,31 @@ a1
 
 
 
+##### 배열의 연산
+
+- +,-,*,/ 다 가능
+- arr1 ** 2 > 모든 원소 제곱
+- arr1 > 20  등 조건식 가능 (True, False 반납)
+
+
+
+##### 통계를 위한 연산
+
+- sum, mean, std, var, min, max 다 가능
+
+
+
+##### 행렬연산
+
+- A.dot(B) : 행렬의 곱
+- np.dot(A,B) : 〃
+- A.transpose() : 전치행렬
+- np.transpose(A) : 〃
+- np.linalg.inv(A) : 역행렬 (곱해서 단위행렬 만드는)
+- np.linalg.det(A) : 행렬식 (역행렬 존재여부에 대한 판별값, 행렬식 값이 0이면 역행렬을 갖지 않음)
+
+
+
 append (행 붙이는 거)
 join (열 붙이는 거)
 merge (특정 열기준으로 붙이는 거)
