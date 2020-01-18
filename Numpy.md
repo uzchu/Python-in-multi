@@ -1,6 +1,8 @@
 # Numpy
 
->  배열데이터를 효과적으로 다루는 Numpy 패키지
+>  수치데이터를 다차원행렬 자료구조인 ndarray를 통해 효과적으로 다루는 패키지
+>
+>  ndarray 자료구조는 정형화된 구조를 만들어서 속도가 빠름
 >
 >  메모리를 효율적으로 관리함
 
@@ -16,7 +18,7 @@ a1 = np.array(data1) >> ndarray
 a1
 ```
 
-- ndarray : 정형화된 구조를 만듦, 연산 속도가 빠름
+- np.array : ndarray 생성함수
 - ndarray.dtype : 데이터타입 알려줌
   - int32 : 정수형
   - float64 : 실수형
@@ -60,7 +62,7 @@ a1
   >>(5,)
   ```
 
-- linspace(범위의 시작,끝,갯수)
+- linspace(범위의 시작,끝,갯수) : 균일한 간격으로 갯수만큼 생성
 
   ```
   np.linspace(1,np.pi,20)
