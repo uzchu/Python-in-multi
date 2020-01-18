@@ -147,12 +147,6 @@ a1
   - 배열[행시작위치:행끝위치,열시작위치:열끝위치] 
   - 배열[행위치] [열시작위치:열끝위치] :특정행 선택후 열 슬라이싱
 
-##### 함수
-
-- append (행 붙이는 거)
-- join (열 붙이는 거)
-- merge (특정 열기준으로 붙이는 거)
-
 
 
 [실습][https://github.com/uzchu/Python-in-multi/blob/master/notebook/Chapter_11_NumPy_pandas.ipynb]
