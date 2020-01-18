@@ -152,3 +152,8 @@ a1
 - append (행 붙이는 거)
 - join (열 붙이는 거)
 - merge (특정 열기준으로 붙이는 거)
+
+
+
+[실습][https://github.com/uzchu/Python-in-multi/blob/master/notebook/Chapter_11_NumPy_pandas.ipynb]
+
