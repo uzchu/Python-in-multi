@@ -7,7 +7,13 @@ from cycler import cycler
 
 # 맷플롯립 한글 폰트 지정
 import matplotlib
-matplotlib.rc('font', family='NanumBarunGothic')
+import matplotlib.font_manager as fm
+#matplotlib.rc('font', family='NanumSquare_ac')
+matplotlib.use('Agg')
+#matplotlib.rc('font', family="D2Coding")
+font_location = 'C:\\Users\\student\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumSquare.ttf'
+font_name = fm.FontProperties(fname = font_location).get_name()
+matplotlib.rc('font', family = font_name)
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 set_matplotlib_formats('pdf', 'png')
