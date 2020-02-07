@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><!--element/attribute -->
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+	input#push{
+		background-color:#ff8000
+	}
+	.mys {background-color:#ffff33}
+	.myc {color:#009900}
+  </style>
+  <title>html수업</title>
+ </head>
+ <body bgcolor="#99ffcc">
+     <h1>Header</h1>
+  <form>
+      <input class="mys myc" id="push" type="button" value="push" onclick="">
+	  <input class="mys" id="pull" type="button" value="pull" onclick="">
+	  <img src="브라우저아이콘/FF.png" class="w3-opacity-max" width="80" height="80" border="0" alt="">
+	  <img src="브라우저아이콘/google.png" width="80" height="80" border="0" alt="">
+	  <img src="브라우저아이콘/ie.png" width="80" height="80" border="0" alt="">
+	  <img src="브라우저아이콘/Opera.png" width="80" height="80" border="0" alt="">
+	  <img src="브라우저아이콘/Safari.png" width="80" height="80" border="0" alt="">
+  </form>
+ </body>
+</html>

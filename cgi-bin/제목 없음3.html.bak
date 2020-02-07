@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script>
+		var i = 'Hello';
+		var j = 10;
+
+		window.document.write("<h1>화면출력</h1>");
+
+		function display(){
+			alert("함수 호출 성공");
+			document.body.style.backgroundColor = "lightpurple";
+		}	
+	</script>
+ 
+ </head>
+ <body>
+  <form method="post" action="process.py">
+    아이디:<input type="text" name="txt_id"><br>
+	비밀번호:<input type="text" name="txt_pw"><br>
+		<input type="button" value="로그인" onclick="javascript:display()">
+	
+  </form>
+ </body>
+</html>
