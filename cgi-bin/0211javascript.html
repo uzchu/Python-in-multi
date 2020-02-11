@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<script>
+		//선언적 함수
+		function display(name,city){
+			window.document.write("<h1>이름:"+name+"</h1>");
+			window.document.write("<h1>주소:"+city+"</h1>");
+		}
+		
+		function display(){
+			for(arg in arguments){
+				window.alert("<h1>arg:"+arg);
+			}//for
+		}
+
+		function myfunc(){
+			function display(){
+				
+			}
+		}
+
+		//호출부
+		display("유디두","서울",24);
+	</script>
+ </head>
+ <body>
+  
+ </body>
+</html>

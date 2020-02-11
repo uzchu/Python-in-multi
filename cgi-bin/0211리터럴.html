@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+<script>
+	//숫자 리터럴
+	var j=10
+	//문자(열) 리터럴
+	var k='Hell0'
+
+	var i = j //리터럴 아님
+
+	//함수리터럴, 배열리터럴, 객체리터럴
+	//익명함수
+	var show = function(name){
+		window.alert('show function '+name);
+	};
+
+	var show2 = function(name){
+		window.alert('show function22222');
+	}
+	//선언적함수
+	function display(args){
+		//document.write(args);
+		args(); //함수리터럴() --> 함수
+	}
+
+	//실행하고자 하는 코드를 인수를 받아서 실행
+	//window.display(show2)
+
+	//function dp(function(){
+		
+	//}){
+		
+	//}
+
+	//function dp2(){
+		
+	//	return function(){;}
+	//}
+	
+	//배열리터럴
+	var arr=[1,2.5,'Hello',function(){},[4,5,6]];
+//	arr[0]
+
+
+	var name='짓츄'
+	//객체리터럴 (딕셔너리구조)
+	var obj={
+		name:'디두',
+		age:26,
+		display:function(){
+			document.write(this.name);
+
+		},
+		moveUp:function(){
+		}
+	};
+	document.write(obj.name)
+	//obj.display()
+
+	//document.write(show);
+	//show(name='짓츄')
+
+
+</script>
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
