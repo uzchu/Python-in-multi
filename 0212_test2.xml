@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<students>
+	<student>
+		<name>홍길동</name>
+		<age>26</age>
+	</student>
+	<student>
+		<name>김길동</name>		
+		<age>25</age>
+	</student>
+</students>
